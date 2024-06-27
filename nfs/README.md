@@ -11,7 +11,7 @@ sudo apt install nfs-kernel-server -y
 
 mkdir /nfs
 
-Use this if you are using the no root squash option (disables the translation from root user on client into a non privileged user on server):
+Use this if you are using the root squash option (disables the translation from root user on client into a non privileged user on server):
 sudo chown nobody:nogroup /nfs
 
 Add this line in /etc/exports:
